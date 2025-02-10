@@ -26,28 +26,24 @@ const features = [
 
 const ProgramHighlights = () => {
   return (
-    <section id="program" className="py-32 relative">
+    <section id="program" className="py-20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight animate-fade-in">Program Highlights</h2>
-          <p className="text-gray-300 mt-6 text-lg animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            Discover what makes our academy unique
-          </p>
+        <div className="text-center mb-16 animate-slide-up">
+          <h2 className="text-3xl md:text-4xl font-bold">Program Highlights</h2>
+          <p className="text-gray-300 mt-4">Discover what makes our academy unique</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="neo-blur p-8 rounded-xl hover-scale card-hover"
+              className="glass p-6 rounded-xl card-hover"
               style={{
-                animation: `fade-in 0.5s ease-out ${index * 0.2}s both`
+                animation: `slide-up 0.5s ease-out ${index * 0.1}s both`
               }}
             >
-              <div className="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 animate-float">
-                <feature.icon className="w-7 h-7 text-primary group-hover:rotate-12 transition-transform duration-500" />
-              </div>
-              <h3 className="text-xl font-semibold mb-4">{feature.title}</h3>
-              <p className="text-gray-300 group-hover:text-white transition-colors duration-300">{feature.description}</p>
+              <feature.icon className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+              <p className="text-gray-300">{feature.description}</p>
             </div>
           ))}
         </div>

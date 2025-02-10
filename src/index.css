@@ -18,73 +18,22 @@
   body {
     @apply bg-accent text-white antialiased;
   }
-
-  ::selection {
-    @apply bg-primary/30 text-white;
-  }
 }
 
 @layer utilities {
   .glass {
-    @apply backdrop-blur-lg bg-white/5 border border-white/10 hover:bg-white/10 transition-colors duration-300;
-  }
-  
-  .neo-blur {
-    @apply backdrop-blur-2xl bg-black/40 border border-white/10;
+    @apply backdrop-blur-lg bg-white/10 border border-white/20;
   }
   
   .hover-scale {
-    @apply transition-all duration-500 hover:scale-105;
+    @apply transition-transform duration-300 hover:scale-105;
   }
   
   .card-hover {
-    @apply transition-all duration-500 hover:shadow-lg hover:-translate-y-1 hover:bg-white/10;
-  }
-
-  .text-gradient {
-    @apply bg-clip-text text-transparent;
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
   }
 }
 
-/* Enhanced Animations */
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-.animate-float {
-  animation: float 3s ease-in-out infinite;
-}
-
-@keyframes pulse-subtle {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.8;
-  }
-}
-
-.animate-pulse-subtle {
-  animation: pulse-subtle 3s ease-in-out infinite;
-}
-
-/* Additional animations */
-@keyframes scale-up {
-  0% {
-    transform: scale(0.95);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-.animate-scale-up {
-  animation: scale-up 0.5s ease-out forwards;
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-dark;
 }
