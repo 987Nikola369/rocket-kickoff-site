@@ -2,6 +2,8 @@
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import ProgramHighlights from "../components/ProgramHighlights";
+import DailySchedule from "../components/DailySchedule";
+import TeamSection from "../components/TeamSection";
 
 const Index = () => {
   return (
@@ -9,6 +11,8 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <ProgramHighlights />
+      <DailySchedule />
+      <TeamSection />
     </main>
   );
 };
