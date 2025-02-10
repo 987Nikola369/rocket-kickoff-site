@@ -4,6 +4,7 @@ import HeroSection from "../components/HeroSection";
 import ProgramHighlights from "../components/ProgramHighlights";
 import DailySchedule from "../components/DailySchedule";
 import TeamSection from "../components/TeamSection";
+import LocationSection from "../components/LocationSection";
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
       <ProgramHighlights />
       <DailySchedule />
       <TeamSection />
+      <LocationSection />
     </main>
   );
 };
