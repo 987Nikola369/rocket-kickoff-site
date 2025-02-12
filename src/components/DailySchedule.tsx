@@ -1,7 +1,47 @@
+
 import { Calendar, Clock, Users, Award } from "lucide-react";
 
 const scheduleData = [
-  // ... keep existing code (scheduleData array)
+  {
+    day: "Day 1",
+    title: "Introduction & Motivation",
+    items: [
+      "Registration and accommodation",
+      "Introduction presentation",
+      "Light conditioning activity",
+      "Motivational speech by Ivan Rakitić"
+    ]
+  },
+  {
+    day: "Day 2",
+    title: "Technical Excellence",
+    items: [
+      "Morning training: dribbling & passing",
+      "Video analysis session",
+      "Workshops with coaches",
+      "Interactive exercises"
+    ]
+  },
+  {
+    day: "Day 3",
+    title: "Tactics & Team Play",
+    items: [
+      "Morning tactical training",
+      "Mental preparation workshop",
+      "Match simulation",
+      "Q&A session with Ivan Rakitić"
+    ]
+  },
+  {
+    day: "Day 4",
+    title: "Final Day & Ceremony",
+    items: [
+      "Mini tournament",
+      "Final evaluation",
+      "Awards ceremony",
+      "Special guest appearances"
+    ]
+  }
 ];
 
 const DailySchedule = () => {

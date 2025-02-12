@@ -1,7 +1,27 @@
+
 import { Trophy, Star } from "lucide-react";
 
 const teamMembers = [
-  // ... keep existing code (teamMembers array)
+  {
+    name: "Ivan Rakitić",
+    role: "Lead Instructor",
+    description: "Former Barcelona and Croatia national team player, bringing professional experience to young talents."
+  },
+  {
+    name: "Martin Grgić",
+    role: "Camp Director",
+    description: "Responsible for overall organization and program development."
+  },
+  {
+    name: "Luka Vučko",
+    role: "Head Coach",
+    description: "Leading technical and tactical training sessions with extensive coaching experience."
+  },
+  {
+    name: "Ivona Kelić",
+    role: "Camp Coordinator",
+    description: "Main point of contact for participants and parents, ensuring smooth operation."
+  }
 ];
 
 const TeamSection = () => {

@@ -1,3 +1,4 @@
+
 import { Trophy, Users, Calendar, Video } from "lucide-react";
 
 const features = [

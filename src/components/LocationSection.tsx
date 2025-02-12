@@ -26,7 +26,18 @@ const LocationSection = () => {
               Professional training grounds at NK Primorac, Split, equipped with modern facilities and technology for optimal performance development.
             </p>
             <ul className="space-y-3">
-              {/* ... keep existing code (facility features list) */}
+              <li className="flex items-center gap-2 text-gray-300">
+                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                Modern training equipment
+              </li>
+              <li className="flex items-center gap-2 text-gray-300">
+                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                Video analysis facilities
+              </li>
+              <li className="flex items-center gap-2 text-gray-300">
+                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                Recovery areas
+              </li>
             </ul>
           </div>
 
@@ -44,7 +55,18 @@ const LocationSection = () => {
               Comfortable stay at Camp Stobreč with modern mobile homes, perfect for team bonding and rest after training sessions.
             </p>
             <ul className="space-y-3">
-              {/* ... keep existing code (accommodation features list) */}
+              <li className="flex items-center gap-2 text-gray-300">
+                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                22 mobile homes (capacity: 88 persons)
+              </li>
+              <li className="flex items-center gap-2 text-gray-300">
+                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                Fully equipped with amenities
+              </li>
+              <li className="flex items-center gap-2 text-gray-300">
+                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                Common areas for team activities
+              </li>
             </ul>
           </div>
         </div>
